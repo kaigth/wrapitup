@@ -1,8 +1,8 @@
 # Wrap it up!
 
-<img src="https://i.imgsafe.org/d1/d193b8503d.png">
+Wrap it up is a web application that allows you to time track speakers, forums, meetings or anything else via a series of color indicators.
 
-Wrap it up is a web application that allows you to time track speakers, forums, meetings or anything else via a series of color indicators. Simply set the duration of the expected time frame, select a time frame for the caution indicator to display and you are on your way. This was inspired by helping host forums. I realized that timers themselves are visually daunting and cause to much focus to be placed on a timer. Colored cues create awareness without overwhelming the speaker about time.
+<img src="https://i.imgsafe.org/d1/d193b8503d.png">
 
 ## Admin Panel
 There are two times to set.
