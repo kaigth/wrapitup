@@ -1,0 +1,35 @@
+.admin {
+    background-color: $dark;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 280px;
+    z-index: $z_layer_02;
+
+    &.is-inactive {
+        transform: translateX(-282px);
+    }
+
+    .admin__container {
+        height: 100%;
+        padding: 14px;
+        position: relative;
+        z-index: $z_layer_02;
+
+        .custom__btn {
+            background-color: $dark;
+            border: none;
+            bottom: -18px;
+            left: 280px;
+            position: absolute;
+            transition: transform 0.3s ease;
+            z-index: $z_layer_01;
+
+            &.is-inactive {
+                transform: translateX(-400px);
+                }
+            }
+        }
+    }

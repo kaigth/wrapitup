@@ -1,0 +1,37 @@
+/******************************************************************************
+ * Abstract Classes
+*******************************************************************************/
+.title {
+    font-size: 10px;
+    color: $white;
+    padding-bottom: 24px;
+    text-transform: uppercase;
+    margin-top: 10px;
+
+    p {
+        padding-bottom: 0;
+    }
+
+    &:before {
+        content: ' ';
+        border: 1px solid $white;
+        border-radius: 100%;
+        display: inline-block;
+        height: 70px;
+        left: 50%;
+        top: 11px;
+        margin-left: -35px;
+        position: absolute;
+        text-align: center;
+        width: 70px;
+    }
+}
+
+.time {
+    bottom: 40px;
+    color: $white;
+    font-size: 32px;
+    opacity: 0.6;
+    position: absolute;
+    right: 40px;
+}
