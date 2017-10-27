@@ -10,11 +10,11 @@ import admin from './admin/index';
  */
 export default class application {
     constructor() {
-        this.page = query( '.js-page' )[0];
+        this.page = query( '.js-page' )[ 0 ];
 
-        this.cover = query( '.js-cover' )[0];
+        this.cover = query( '.js-cover' )[ 0 ];
 
-        this.coverContent = query( '.js-cover-content', this.cover )[0];
+        this.coverContent = query( '.js-cover-content', this.cover )[ 0 ];
 
         this.admin = query( '.js-admin' );
 
