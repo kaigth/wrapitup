@@ -96,6 +96,7 @@ export default class bgHandler {
      * 
      */
     reset() {
+        this.flashes = 0;
         clearTimeout( this.flashTimeout );
         clearTimeout( this.flashSubTimeout );
         this.background.classList.remove( 'flash' );
