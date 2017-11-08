@@ -30,7 +30,7 @@ export default class application {
      * 
      */
     init() {
-        setTimeout( this.loadScreen.bind( this ), this.loadTime );
+        setTimeout( ::this.loadScreen, this.loadTime );
 
         this.page.style.opacity = 1;
 
