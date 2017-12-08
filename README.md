@@ -27,3 +27,17 @@ Coming Soon Features:
 - Pause button near the reset button..
 - Add multiple speakers names to control multiple times.
 - Private mode so it can be controlled by other instances.
+
+## Contribute
+Want to contribute or run the project locally? This project uses yarn, you will need to install it globally.
+
+`npm i -g yarn`
+
+Then simply install and run.
+
+```
+yarn install
+yarn start
+```
+
+Easy pie.
