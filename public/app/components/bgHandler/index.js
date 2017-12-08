@@ -29,7 +29,7 @@ export default class bgHandler {
      * 
      */
     init() {
-        console.log( 'Set Background Options:', this.options );
+        console.log( 'Set Background Options: ', this.options );
     }
 
     /**
@@ -51,7 +51,7 @@ export default class bgHandler {
                     clearTimeout( this.flashSubTimeout );
                 }, this.delay );
         
-                ( this.flashes >= flashes ) ? clearTimeout( this.flashTimeout ) : callTimeout();
+                ( this.flashes >= flashes ) ? this.softReset() : callTimeout();
             }, flashDelay );
         };
 
@@ -91,11 +91,23 @@ export default class bgHandler {
 
     /**
      * 
+     * @description Soft reset the flashes and timeout.
+     * @memberof bgHandler
+     * 
+     */
+    softReset() {
+        this.flashes = 0;
+        clearTimeout( this.flashTimeout );
+    }
+
+    /**
+     * 
      * @description Reset the background to the defaults.
      * @memberof bgHandler
      * 
      */
     reset() {
+        this.flashes = 0;
         clearTimeout( this.flashTimeout );
         clearTimeout( this.flashSubTimeout );
         this.background.classList.remove( 'flash' );

@@ -12,9 +12,9 @@ export default class admin {
     constructor( element ) {
         this.element = element;
 
-        this.raf = val => window.requestAnimationFrame(val);
+        this.raf = val => window.requestAnimationFrame( val );
         
-        this.xraf = val => window.cancelAnimationFrame(val);
+        this.xraf = val => window.cancelAnimationFrame( val );
 
         this.time = query( '.js-time', this.element )[ 0 ];
 
@@ -30,7 +30,7 @@ export default class admin {
 
         this.flashCaution = 3;
 
-        this.flashWrapItUp = 999;
+        this.flashWrapItUp = 8;
 
         this.running = false;
 
@@ -54,8 +54,8 @@ export default class admin {
     init() {
         console.warn( 'Admin initialized.' );
 
-        this.start.addEventListener( 'click', this.go.bind( this ) );
-        this.reset.addEventListener( 'click', this.restart.bind( this ) );
+        this.start.addEventListener( 'click', ::this.go );
+        this.reset.addEventListener( 'click', ::this.restart );
     }
 
     /**
@@ -116,7 +116,7 @@ export default class admin {
             if ( this.running ) {
                 if ( !this.started ) this.started = now;
                 const difference = (now - this.started);
-                const remainder = Math.ceil( ( this.timer - difference ) / 1000 );
+                const remainder = Math.floor( ( this.timer - difference ) / 1000 );
                 const trueRemainder = Math.ceil( remainder / 60 );
 
                 if ( currentTime !== trueRemainder ) {

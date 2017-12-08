@@ -1,10 +1,9 @@
-var webpack = require( 'webpack' );
 var path = require( 'path' );
 
 var APP_DIR = path.join( __dirname, '..', 'app' );
 
 module.exports = {
-  entry: [ './public/app/index.js' ],
+  entry: './public/app/index.js',
   module: {
     rules: [
       {
@@ -21,13 +20,11 @@ module.exports = {
         test: /\.js$/,
         use: 'eslint-loader',
         enforce: 'pre',
-        include: APP_DIR,
         exclude: '/node_modules/'
       },
       {
         test: /\.js$/,
-        use: ['babel-loader'],
-        include: APP_DIR,
+        use: 'babel-loader',
         exclude: '/node_modules/'
       }
     ]
