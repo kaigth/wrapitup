@@ -7,7 +7,7 @@ Wrap it up is a web application that allows you to time track speakers, forums, 
 ## Admin Panel
 There are two times to set.
 - The duration in minutes
-- When to caution, 5, 2 or 1 minute.
+- When to caution, 1, 2, 3, 4, or 5 minutes.
 
 ## Visual Cues
 When its solid green, just keep talking. When it turns yellow and flashes three times it's almost time to wrap it up. Once it goes red it will continue to flash until you reset the application by hitting the reset button at the bottom left.  You can reset at any point and the timer will stop.
