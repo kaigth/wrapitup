@@ -33,7 +33,7 @@ Want to contribute or run the project locally? This project uses yarn, you will 
 
 `npm i -g yarn`
 
-Then simply install and run.
+Then simply install and run. Works with Node 8.
 
 ```
 yarn install
