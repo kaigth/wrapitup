@@ -29,6 +29,8 @@ Coming Soon Features:
 - Private mode so it can be controlled by other instances.
 
 ## Contribute
+If you're running `nvm`, run `nvm use` to ensure you're on Node&nbsp;8.
+
 Want to contribute or run the project locally? This project uses yarn, you will need to install it globally.
 
 `npm i -g yarn`
